@@ -1,4 +1,8 @@
 @media (min-width: 992px) {
+	h1.company-name {
+		font-size: 6rem;
+	}
+
 	.header {
 		grid-template-rows: auto repeat(2, 1fr);
 
@@ -64,11 +68,10 @@
 		&-desktop {
 			display: block;
 			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
 		}
-        
+
 		&__link {
-            color: $white;
+			color: $white;
 
 			&::before {
 				position: absolute;
@@ -81,14 +84,23 @@
 				opacity: 0;
 			}
 
-			&:hover::before{
+			&:hover::before {
 				animation: pulse 1s;
 			}
-	
 		}
 	}
 
 	.hamburger {
 		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		&__text {
+			p {
+				font-size: 2.2rem;
+			}
+		}
 	}
 }
